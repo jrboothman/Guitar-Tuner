@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guitar_Tuner.Views.StandardTuning">
+    <ContentPage.Content>
+        <Grid
+            Padding="20"
+            ColumnDefinitions="Auto, Auto,Auto"
+            RowDefinitions="Auto,Auto">
+            
+            <Button Text ="E" Margin="10" Grid.Row="1" Grid.Column="0" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
+            <Button Text ="A" Margin="10" Grid.Row="1" Grid.Column="1" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
+            <Button Text ="D" Margin="10" Grid.Row="1" Grid.Column="2" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
+            <Button Text ="G" Margin="10" Grid.Row="1" Grid.Column="3" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
+            <Button Text ="B" Margin="10" Grid.Row="1" Grid.Column="4" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
+            <Button Text ="E" Margin="10" Grid.Row="1" Grid.Column="5" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

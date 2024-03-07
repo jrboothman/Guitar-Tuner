@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guitar_Tuner.Views.TunePage"
+             NavigationPage.HasNavigationBar="True">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <Button VerticalOptions="Center" Text="Standard Tuning" Clicked="StandardClicked"
+                    Margin="20"/>
+            <Button VerticalOptions="Center" Text="Drop D Tuning" Clicked="DropDClicked"
+                    Margin="20"/>
+            <Button VerticalOptions="Center" Text="Drop C Tuning" Clicked="DropCClicked"
+                    Margin="20"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

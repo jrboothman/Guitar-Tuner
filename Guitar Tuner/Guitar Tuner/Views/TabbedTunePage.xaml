@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Guitar_Tuner.Views.TabbedTunePage"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            xmlns:local="clr-namespace:Guitar_Tuner.Views">
+  <!--Pages can be added as references or inline-->
+    <local:TunePage Title="Tune"/>
+    <local:NotesPage Title="Notes" />
+    <local:CustomTunings Title="Custom Tunings" />
+
+</TabbedPage>
