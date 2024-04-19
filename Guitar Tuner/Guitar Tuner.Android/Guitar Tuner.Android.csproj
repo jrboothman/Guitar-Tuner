@@ -54,6 +54,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="FftSharp">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="MathNet.Numerics">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.AudioRecorder">
+      <Version>1.1.0</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
@@ -91,6 +100,9 @@
       <Project>{F8117FD1-1999-4402-B66C-F6443F62B501}</Project>
       <Name>Guitar Tuner</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\guitar64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

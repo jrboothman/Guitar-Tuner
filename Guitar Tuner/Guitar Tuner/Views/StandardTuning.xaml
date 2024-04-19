@@ -3,17 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Guitar_Tuner.Views.StandardTuning">
     <ContentPage.Content>
-        <Grid
+        <Grid BackgroundColor="White"
             Padding="20"
             ColumnDefinitions="Auto, Auto,Auto"
             RowDefinitions="Auto,Auto">
-            
-            <Button Text ="E" Margin="10" Grid.Row="1" Grid.Column="0" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
-            <Button Text ="A" Margin="10" Grid.Row="1" Grid.Column="1" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
-            <Button Text ="D" Margin="10" Grid.Row="1" Grid.Column="2" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
-            <Button Text ="G" Margin="10" Grid.Row="1" Grid.Column="3" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
-            <Button Text ="B" Margin="10" Grid.Row="1" Grid.Column="4" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
-            <Button Text ="E" Margin="10" Grid.Row="1" Grid.Column="5" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center"/>
+
+            <Button Text ="E" Margin="10" Grid.Row="1" Grid.Column="0" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center" Clicked="LEButtonClicked"/>
+            <Button Text ="A" Margin="10" Grid.Row="1" Grid.Column="1" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center" Clicked="AButtonClicked"/>
+            <Button Text ="D" Margin="10" Grid.Row="1" Grid.Column="2" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center" Clicked="DButtonClicked"/>
+            <Button Text ="G" Margin="10" Grid.Row="1" Grid.Column="3" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center" Clicked="GButtonClicked"/>
+            <Button Text ="B" Margin="10" Grid.Row="1" Grid.Column="4" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center" Clicked="BButtonClicked"/>
+            <Button Text ="E" Margin="10" Grid.Row="1" Grid.Column="5" HeightRequest="37" WidthRequest="37" HorizontalOptions="Center" Clicked="HEButtonClicked"/>
+            <Label x:Name="TuneInfoText" Margin ="50" Text="" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" FontSize= "Large" TextColor="Black" />
+            <Button Text ="Tune" Margin="10" Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="4" HeightRequest="50" WidthRequest="200" HorizontalOptions="Center" VerticalOptions="Center" Clicked="TuneButtonClicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
